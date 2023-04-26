@@ -252,6 +252,11 @@ progress::-moz-progress-value{
   display: none;
 }
 
+.section{
+  padding: 2rem 1rem;
+}
+
+
 
 .text-center {
   text-align: center;
@@ -266,6 +271,12 @@ progress::-moz-progress-value{
 }
 
 @media screen and (min-width: 1024px) {
+
+.full-lg-screen{
+  width: 100%;
+  min-height: 100vh;
+}
+
 .text-lg-center {
   text-align: center;
 }
@@ -281,6 +292,10 @@ progress::-moz-progress-value{
 
 
 /* ************* Site styles ************* */
+
+.about > article {
+  margin-bottom: 2rem;
+}
 
 .header {
   position: fixed;
@@ -312,6 +327,13 @@ progress::-moz-progress-value{
 }
 
 @media screen and (min-width: 1024px){
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+  }
+
   .header {
     position: sticky;
     top: 0;
