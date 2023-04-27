@@ -343,17 +343,28 @@ progress::-moz-progress-value{
   text-align: center;
 }
 
+.service-card h3 {
+  color: var(--title-color);
+}
+
 .service-card svg {
   fill: var(--first-color);
   margin-bottom: 1.25rem;
 }
 
-.service-card h3 {
-  color: var(--title-color);
-}
+
 
 @media screen and (min-width: 768px){
-  
+    .services > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-title {
+    grid-column: span 2;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -370,5 +381,14 @@ progress::-moz-progress-value{
     padding: 0.5rem;
     height: calc(var(--header-height) - 0.5rem);
   }
+
+.services > .container {
+    grid-template-columns: repeat(3, 30%);
+  }
+
+.section-title {
+    grid-column: span 3;
+  }
+}
   
 }
